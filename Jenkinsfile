@@ -14,12 +14,7 @@ steps {
 sh "rm -rf *" 
 sh "git clone $url"  
 } 
-}  
-stage ("BUILD_PROJECT") { 
-steps { 
-sh "sudo cd /mnt/projects/project/ && mvn clean install" 
-} 
-} 
+}
 stage ("COPY") { 
 steps { 
 sh "rm -rf /mnt/wars/*" 
