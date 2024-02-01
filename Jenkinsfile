@@ -17,7 +17,7 @@ sh "git clone $url"
 }  
 stage ("BUILD_PROJECT") { 
 steps { 
-sh "sudo cd project/ && mvn clean install" 
+sh "sudo cd /mnt/projects/project/ && mvn clean install" 
 } 
 } 
 stage ("COPY") { 
