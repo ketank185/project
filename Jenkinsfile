@@ -18,7 +18,7 @@ sh "git clone $url"
 stage ("COPY") { 
 steps { 
 sh "rm -rf /mnt/wars/*" 
-sh "cp -r /mnt/projects/target/LoginWebApp.war /mnt/wars" 
+sh "cp -r /mnt/projects/project/target/LoginWebApp.war /mnt/wars" 
 } 
 } 
 } 
