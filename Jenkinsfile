@@ -23,8 +23,7 @@ sh "cd project && mvn clean install"
 stage ("COPY") { 
 steps { 
 sh "rm -rf /mnt/wars/*" 
-sh "cp -r /mnt/projects/project/target/LoginWebApp.war /mnt/wars"
-sh "cp /mnt/wars /mnt/servers/apache-tomcat-9.0.85/webapps" 
+sh "cp -r /mnt/projects/project/target/LoginWebApp.war /mnt/servers/apache-tomcat-9.0.85/webapps"
 } 
 } 
 } 
